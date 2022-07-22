@@ -1,0 +1,721 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(184, 184, 243);
+    margin: 0;
+    padding: 0;
+}
+
+.error {
+    color: red;
+}
+
+/* 
+*************************************************************
+------------------------APP ----------------------------
+************************************************************* */
+/* .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: rgba(10, 180, 180, 1);
+    padding: 0 1rem;
+}
+
+.header-left {
+    flex: 25vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.header-center {
+    flex: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-right {
+    flex: 25vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-right .profilePicture {
+    height: 2rem;
+    width: 2rem;
+}
+.app-header > p {
+    font-size: large;
+}
+
+.navlink {
+    color: rgb(184, 184, 243);
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 3rem;
+    padding: 0 1rem;
+}
+.navlink:hover,
+.navlink.active {
+    background: rgba(10, 180, 180, 1);
+    color: rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    text-decoration: none;
+}
+/* 
+*************************************************************
+------------------------WELCOME ----------------------------
+************************************************************* */
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome > h2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 0px -3px 2px #141414;
+}
+/* 
+*************************************************************
+------------------------REGISTER ----------------------------
+************************************************************* */
+.register-container {
+    background: url(images/back1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 800px; */
+    text-align: center;
+    color: white;
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    border-radius: 15px;
+}
+.register-info {
+    width: 30vw;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 30px 0;
+    border-right: 5px solid rgba(30, 30, 30, 0.8);
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.register-info-h2 {
+    font-weight: 300;
+}
+
+.register-info-icon {
+    font-size: 8em;
+    padding: 20px 0;
+    color: rgba(10, 180, 180, 1);
+    width: 50px;
+}
+.register-form {
+    width: 30vw;
+    padding: 30px 0;
+    background: rgba(76, 88, 100, 0.801);
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.register-form-ul {
+    list-style-type: none;
+    padding: 0;
+}
+.register-form-h2 {
+    font-weight: 300;
+}
+.register-input {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(20, 20, 20, 0.2);
+    color: white;
+    outline: none;
+}
+
+.register-p {
+    padding-top: 1rem;
+}
+.register-input:hover {
+    background: rgba(20, 20, 20, 0.8);
+}
+
+.register-Btn {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, 0.6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 55px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 1rem;
+}
+.register-Btn:hover {
+    background: rgba(20, 20, 20, 0.8);
+    padding: 10px 90px;
+}
+.login-here:link {
+    color: rgba(10, 180, 180);
+    text-decoration: none;
+}
+.login-here:visited {
+    color: rgba(10, 180, 180);
+    text-decoration: none;
+}
+.login-here:hover {
+    color: white;
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(10, 180, 180, 1);
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* 
+*************************************************************
+------------------------LOGIN ----------------------------
+************************************************************* */
+.login-container {
+    background: url(images/back1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25vw;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    border-radius: 5%;
+}
+.login-form {
+    width: 25vw;
+    padding: 30px 0;
+    /* background: rgba(20, 40, 40, 0.8); */
+    background: rgba(76, 88, 100, 0.801);
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+.login-input:hover {
+    background: rgba(20, 20, 20, 0.8);
+}
+.login-form-h2 {
+    font-weight: 300;
+}
+
+.login-form-ul {
+    list-style-type: none;
+    padding: 0;
+}
+.login-input {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 20vw;
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(20, 20, 20, 0.2);
+    color: white;
+    outline: none;
+}
+.login-Btn {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, 0.6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 55px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.login-Btn:hover {
+    background: rgba(20, 20, 20, 0.8);
+    padding: 10px 105px;
+}
+.login-p {
+    margin-top: 1.5rem;
+}
+.login-p2 {
+    margin-top: 1.5rem;
+}
+.register-here:link {
+    color: rgba(10, 180, 180);
+    text-decoration: none;
+}
+.register-here:visited {
+    color: rgba(10, 180, 180);
+    text-decoration: none;
+}
+.register-here:hover {
+    color: white;
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(10, 180, 180, 1);
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* 
+*************************************************************
+------------------------LOGOUT ----------------------------
+************************************************************* */
+.logout button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: rgb(184, 184, 243);
+    margin-right: 1rem;
+}
+.logout-btn-img {
+    width: 30px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    background-color: transparent;
+}
+.logout-btn-img:hover {
+    transform: scale(1.2);
+}
+
+/* 
+*************************************************************
+------------------------PICMODAL ----------------------------
+************************************************************* */
+
+.PicModal {
+    opacity: 1;
+    /* visibility: hidden; */
+    transition: opacity 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 212, 212, 0.8);
+}
+
+.modalCloseBtn {
+    border: none;
+    background-color: #f69d17;
+    width: 50px;
+    height: 50px;
+    color: #e7dfdd;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+/* 
+*************************************************************
+------------------------PROFILE PICTURE ----------------------------
+************************************************************* */
+.profilePicture {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+    border-radius: 190px;
+}
+
+/* 
+*************************************************************
+------------------------PROFILE ----------------------------
+************************************************************* */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.profile-sub-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+.profile-sub-container > ul {
+    width: 80vw;
+}
+.profile-image {
+    width: 15rem;
+    height: 15rem;
+    -webkit-box-shadow: 4px 4px 29px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 29px 6px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 29px 6px rgba(0, 0, 0, 0.75);
+    object-fit: cover;
+}
+
+.profile-sub-container-h2 {
+    margin-left: 2rem;
+}
+/* .profile-bio {
+    width: 50vw;
+} */
+/* 
+*************************************************************
+------------------------BIO ----------------------------
+************************************************************* */
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    /* background-color: #f69d17; */
+}
+.edit-bio-button {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, 0.6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.edit-bio-update {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, 0.6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.edit-bio-cancle {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, 0.884);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 42px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.edit-bio-form {
+    width: 50vw;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.edit-bio-textarea {
+    align-self: stretch;
+    min-height: 100px;
+}
+/* 
+*************************************************************
+------------------------FIND PEOPLE ----------------------------
+************************************************************* */
+.recent-users-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.recent_users_container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(20, 20, 20, 0.8);
+    color: rgba(10, 180, 180, 1);
+    border-radius: 5px;
+}
+.find-people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.recent_users_list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.recent_users_list > ul > li {
+    list-style-type: none;
+    color: #e7dfdd;
+}
+
+.recent_users_list > li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recent-users-link,
+:link {
+    color: rgba(10, 180, 180);
+    text-decoration: none;
+}
+
+.recent-users-link:visited {
+    color: rgb(233, 109, 109);
+    text-decoration: none;
+}
+
+.recent-users-link:hover {
+    color: rgb(189, 188, 252);
+    text-decoration: none;
+}
+
+.search-form-input {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(255, 255, 255, 0.836);
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+
+.search-form-button {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, 0.6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-left: 1rem;
+}
+.display-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display-search-ul {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.display-search > ul > li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.recent-users-image {
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+.display-search > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.display-search-link {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+}
+
+.display-search-link:link {
+    color: rgba(7, 0, 66, 0.856);
+
+    text-decoration: none;
+}
+.display-search-link:hover {
+    color: rgb(52, 31, 243);
+    /* background-color: rgb(154, 154, 247); */
+    text-decoration: none;
+    -webkit-box-shadow: 5px 5px 15px -3px #000000;
+    box-shadow: 5px 5px 15px -3px #000000;
+}
+.display-search-link:visited {
+    color: rgb(233, 109, 109);
+    text-decoration: none;
+}
+/* 
+*************************************************************
+------------------------OTHER PROFILE ----------------------------
+************************************************************* */
+.other-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+/* 
+*************************************************************
+------------------------FRIENDS----------------------------
+************************************************************* */
+
+.pending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.friends {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+*************************************************************
+-----------------------------CHAT----------------------------
+************************************************************* */
+.chat_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.chat_title {
+    background-color: rgba(10, 180, 180, 1);
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.chat_ul {
+    padding: 0;
+    height: 300px;
+    overflow: auto;
+}
+.chat_container > ul > li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.chat_input {
+    /* margin: 15px 0; */
+    margin-left: 140px;
+    font-size: 16px;
+    padding: 10px;
+    width: 400px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* background: rgba(20, 20, 20, 0.2); */
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+.chat_button {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, 0.6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 55px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-left: 1rem;
+}
+/* 
+*************************************************************
+------------------------CHAT MESSAGE ----------------------------
+************************************************************* */
+
+.message_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.message_sender {
+    flex: 0 0 10em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+}
+
+.message_contents {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.message_text {
+    flex: 1;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.message_time {
+    margin-left: 1rem;
+}
