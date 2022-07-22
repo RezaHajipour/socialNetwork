@@ -336,10 +336,12 @@ app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "..", "client", "index.html"));
 });
 
-server.listen(process.env.PORT || 3001, function () {
-    console.log("I'm listening.");
-});
-
 function sendEmail({ code, email }) {
     console.log("sending email to: ....,", code, email);
 }
+
+const PORT = process.env.PORT || 3001;
+
+server.listen(PORT, () => {
+    console.log(`express listening on port ${PORT}`);
+});
